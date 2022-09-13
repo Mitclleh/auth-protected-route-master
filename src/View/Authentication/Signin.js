@@ -24,15 +24,11 @@ function Signin() {
 
 
   let history = useHistory();
-  history.push('/home')
+
 const loginSubmitted = (val)=> {
   if(val === true){
-    console.log(val)
-    localStorage.setItem('isAuthenticated',true)
-    
+    localStorage.setItem('isAuthenticated',true) 
    history.push('/home')
-
- 
 }
 }
   

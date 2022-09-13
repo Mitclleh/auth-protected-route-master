@@ -4,7 +4,7 @@ import { useNavigate,useHistory ,Link} from "react-router-dom";
 const CategoryList = ({ }) => {
 
 const [categories,setCategories] = useState([]); 
-let history = useHistory();
+
 
 useState(()=> {
 getCategories().then((c)=> setCategories(c))

@@ -10,7 +10,7 @@ function Home() {
   };
   return (
     <div className="App">
-      <h2>Welcome to the Homepage / Landing page</h2>
+     
       <button className="btn btn-primary" onClick={handleLogout}>
         Logout
       </button>

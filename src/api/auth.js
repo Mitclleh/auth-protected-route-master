@@ -10,8 +10,8 @@ const login = async (credentials)=> {
      console.log(credentials.email)
      console.log(credentials.password)
   params.append('grant_type', 'password');
-  params.append('client_id', 'web-dashboard');
-  params.append('client_secret', 'SuperSecretPassword');
+  params.append('client_id', process.env.client_id);
+  params.append('client_secret', process.env.client_secret);
   params.append('scope', 'openid profile role email offline_access adminApi mobileApi');
   params.append('username', credentials.email);
   params.append('password', credentials.password);

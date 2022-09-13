@@ -1,7 +1,7 @@
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 import getCategories from "../api/categories";
-import { useNavigate,useHistory ,Link} from "react-router-dom";
-const CategoryList = ({ }) => {
+import {Link} from "react-router-dom";
+const CategoryList = () => {
 
 const [categories,setCategories] = useState([]); 
 
@@ -9,11 +9,6 @@ const [categories,setCategories] = useState([]);
 useState(()=> {
 getCategories().then((c)=> setCategories(c))
 })
-
-
-
-//const hi = useState()
-
     return (
         <div className="blog-list">
         {categories.map(category => (
